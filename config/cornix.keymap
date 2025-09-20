@@ -106,7 +106,7 @@
         cb_quote {
             bindings = <&kp SQT>;
             key-positions = <21 22>;
-            layers = <0 2>;
+            layers = <0 2 1>;
         };
 
         cb_ralt_lc {
@@ -195,10 +195,10 @@
         Totem_HR {
             display-name = "BaseHR";
             bindings = <
-&none      &kp Q           &kp W           &kp E             &kp R             &kp T                               &kp Y        &kp U             &kp I         &kp O       &kp P          &none
-&none      &hr LEFT_GUI A  &hr LEFT_ALT S  &hr LCTRL D       &hr_shft LSHFT F  &kp G                               &kp H        &hr_shft RSHFT J  &hr LCTRL K   &hr LALT L  &hr RGUI SEMI  &none
-&kp LSHFT  &kp Z           &kp X           &kp C             &kp V             &kp B         &mkp LCLK  &mkp RCLK  &kp N        &kp M             &kp COMMA     &kp DOT     &kp FSLH       &kp RSHFT
-&none      &none           &none           &mt LCTRL ESCAPE  &sb_lt 6 SPACE    &mt LALT TAB                        &lt 4 ENTER  &lt 3 BACKSPACE   &lt 5 DELETE  &trans      &none          &none
+&none  &kp Q           &kp W           &kp E             &kp R             &kp T                               &kp Y        &kp U             &kp I         &kp O       &kp P          &none
+&none  &hr LEFT_GUI A  &hr LEFT_ALT S  &hr LCTRL D       &hr_shft LSHFT F  &kp G                               &kp H        &hr_shft RSHFT J  &hr LCTRL K   &hr LALT L  &hr RGUI SEMI  &none
+&none  &kp Z           &kp X           &kp C             &kp V             &kp B         &mkp LCLK  &mkp RCLK  &kp N        &kp M             &kp COMMA     &kp DOT     &kp FSLH       &none
+&none  &none           &none           &mt LCTRL ESCAPE  &sb_lt 6 SPACE    &mt LALT TAB                        &lt 4 ENTER  &lt 3 BACKSPACE   &lt 5 DELETE  &trans      &none          &none
             >;
 
             sensor-bindings =
@@ -209,10 +209,10 @@
         Corne {
             display-name = "Base42";
             bindings = <
-&kp DEL    &kp Q   &kp W   &kp E             &kp R           &kp T                            &kp Y           &kp U   &kp I        &kp O    &kp P     &kp BACKSPACE
-&kp LGUI   &trans  &trans  &trans            &trans          &kp G                            &kp H           &trans  &trans       &trans   &trans    &kp ENTER
-&kp LSHFT  &kp Z   &kp X   &kp C             &kp V           &kp B         &kp C_MUTE  &none  &kp N           &kp M   &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
-&none      &none   &none   &mt LCTRL ESCAPE  &sb_lt 6 SPACE  &kp LEFT_ALT                     &lt 4 LEFT_ALT  &mo 3   &lt 5 LCTRL  &none    &trans    &none
+&kp DEL    &kp Q   &kp W   &kp E             &kp R           &kp T                            &kp Y        &kp U   &kp I        &kp O    &kp P     &kp BACKSPACE
+&kp TAB    &trans  &trans  &trans            &trans          &kp G                            &kp H        &trans  &trans       &trans   &trans    &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C             &kp V           &kp B         &kp C_MUTE  &none  &kp N        &kp M   &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
+&none      &none   &none   &mt LCTRL ESCAPE  &sb_lt 6 SPACE  &kp LEFT_ALT                     &lt 4 ENTER  &mo 3   &lt 5 LCTRL  &none    &trans    &none
             >;
 
             sensor-bindings =
