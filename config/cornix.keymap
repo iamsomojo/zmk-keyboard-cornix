@@ -66,13 +66,13 @@
         compatible = "zmk,conditional-layers";
 
         mv_media {
-            if-layers = <6 4>;
-            then-layer = <8>;
+            if-layers = <4 2>;
+            then-layer = <6>;
         };
 
         mv_mouse {
-            if-layers = <6 3>;
-            then-layer = <7>;
+            if-layers = <4 1>;
+            then-layer = <5>;
         };
     };
 
@@ -106,7 +106,7 @@
         cb_quote {
             bindings = <&kp SQT>;
             key-positions = <21 22>;
-            layers = <0 2 1>;
+            layers = <0>;
         };
 
         cb_ralt_lc {
@@ -120,7 +120,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             require-prior-idle-ms = <130>;
-            layers = <2>;
         };
 
         cb_lalt {
@@ -164,13 +163,13 @@
         };
 
         cb_mo_media {
-            bindings = <&mo 8>;
+            bindings = <&mo 6>;
             key-positions = <42 44>;
             require-prior-idle-ms = <130>;
         };
 
         cb_move_layer_mouse {
-            bindings = <&mo 7>;
+            bindings = <&mo 5>;
             key-positions = <42 45>;
         };
     };
@@ -182,37 +181,9 @@
             display-name = "Base";
             bindings = <
 &none      &kp Q  &kp W  &kp E             &kp R           &kp T                            &kp Y        &kp U               &kp I         &kp O    &kp P          &none
-&none      &kp A  &kp S  &kp D             &kp F           &kp G                            &kp H        &kp J               &kp K         &kp L    &kp SEMICOLON  &none
+&none      &kp A  &kp S  &kp D             &kp F           &kp G                            &kp H        &kp J               &kp K         &kp L    &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V           &kp B         &kp C_MUTE  &none  &kp N        &kp M               &kp COMMA     &kp DOT  &kp FSLH       &kp RSHFT
-&none      &none  &none  &mt LCTRL ESCAPE  &sb_lt 6 SPACE  &mt LALT TAB                     &lt 4 ENTER  &sb_lt 3 BACKSPACE  &lt 5 DELETE  &tog 1   &tog 2         &none
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
-        };
-
-        Totem_HR {
-            display-name = "BaseHR";
-            bindings = <
-&none  &kp Q           &kp W           &kp E             &kp R             &kp T                               &kp Y        &kp U               &kp I         &kp O       &kp P          &none
-&none  &hr LEFT_GUI A  &hr LEFT_ALT S  &hr LCTRL D       &hr_shft LSHFT F  &kp G                               &kp H        &hr_shft RSHFT J    &hr LCTRL K   &hr LALT L  &hr RGUI SEMI  &none
-&none  &kp Z           &kp X           &kp C             &kp V             &kp B         &mkp LCLK  &mkp RCLK  &kp N        &kp M               &kp COMMA     &kp DOT     &kp FSLH       &none
-&none  &none           &none           &mt LCTRL ESCAPE  &sb_lt 6 SPACE    &mt LALT TAB                        &lt 4 ENTER  &sb_lt 3 BACKSPACE  &lt 5 DELETE  &trans      &none          &none
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
-        };
-
-        Corne {
-            display-name = "Base42";
-            bindings = <
-&kp DEL    &kp Q   &kp W   &kp E             &kp R           &kp T                            &kp Y        &kp U   &kp I        &kp O    &kp P     &kp BACKSPACE
-&kp TAB    &trans  &trans  &trans            &trans          &kp G                            &kp H        &trans  &trans       &trans   &trans    &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C             &kp V           &kp B         &kp C_MUTE  &none  &kp N        &kp M   &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
-&none      &none   &none   &mt LCTRL ESCAPE  &sb_lt 6 SPACE  &kp LEFT_ALT                     &lt 4 ENTER  &mo 3   &lt 5 LCTRL  &none    &trans    &none
+&none      &none  &none  &mt LCTRL ESCAPE  &sb_lt 4 SPACE  &mt LALT TAB                     &lt 2 ENTER  &sb_lt 1 BACKSPACE  &lt 3 DELETE  &none    &none          &none
             >;
 
             sensor-bindings =
