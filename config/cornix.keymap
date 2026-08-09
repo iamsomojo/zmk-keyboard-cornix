@@ -58,6 +58,13 @@
             quick-tap-ms = <130>;
             flavor = "balanced";
         };
+
+        cw: capsword {
+            compatible = "zmk,behavior-caps-word";
+            label = "CW";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -65,16 +72,9 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_caps {
-            bindings = <&kp CLCK>;
-            key-positions = <3 4>;
-            require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
-        };
-
-        cb_tab {
-            bindings = <&kp TAB>;
-            key-positions = <3 2>;
+        cb_language {
+            bindings = <&kp RALT>;
+            key-positions = <42 45>;
             require-prior-idle-ms = <130>;
             timeout-ms = <30>;
         };
@@ -95,21 +95,14 @@
 
         cb_quote {
             bindings = <&kp SQT>;
-            key-positions = <21 20>;
+            key-positions = <33 34>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
-        cb_ralt_lc {
-            bindings = <&kp RALT>;
-            key-positions = <8 9>;
-            require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
-        };
-
-        cb_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+        cb_capsword {
+            bindings = <&cw>;
+            key-positions = <37 24>;
             require-prior-idle-ms = <130>;
             timeout-ms = <30>;
         };
@@ -128,13 +121,6 @@
             timeout-ms = <30>;
         };
 
-        cb_lctrl_lalt {
-            bindings = <&kp LC(LALT)>;
-            key-positions = <14 15 16>;
-            require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
-        };
-
         cb_ralt {
             bindings = <&kp LALT>;
             key-positions = <20 21>;
@@ -145,13 +131,6 @@
         cb_rctrl {
             bindings = <&kp LCTRL>;
             key-positions = <19 20>;
-            require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
-        };
-
-        cb_rctrl_ralt {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <19 20 21>;
             require-prior-idle-ms = <130>;
             timeout-ms = <30>;
         };
