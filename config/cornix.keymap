@@ -81,21 +81,21 @@
 
         cb_lgui {
             bindings = <&kp LGUI>;
-            key-positions = <27 26>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <130>;
             timeout-ms = <30>;
         };
 
         cb_rgui {
             bindings = <&kp RGUI>;
-            key-positions = <34 35>;
+            key-positions = <22 21>;
             require-prior-idle-ms = <130>;
             timeout-ms = <30>;
         };
 
         cb_quote {
             bindings = <&kp SQT>;
-            key-positions = <33 34>;
+            key-positions = <35 34>;
             layers = <0>;
             timeout-ms = <30>;
         };
