@@ -69,90 +69,98 @@
             bindings = <&kp CLCK>;
             key-positions = <3 4>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_tab {
             bindings = <&kp TAB>;
             key-positions = <3 2>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_lgui {
             bindings = <&kp LGUI>;
             key-positions = <27 26>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_rgui {
             bindings = <&kp RGUI>;
             key-positions = <34 35>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_quote {
             bindings = <&kp SQT>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         cb_ralt_lc {
             bindings = <&kp RALT>;
             key-positions = <8 9>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         cb_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_lalt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <14 15>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         cb_lctrl {
             bindings = <&kp LCTRL>;
             key-positions = <15 16>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         cb_lctrl_lalt {
             bindings = <&kp LC(LALT)>;
             key-positions = <14 15 16>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
 
         cb_ralt {
             bindings = <&kp LALT>;
             key-positions = <20 21>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         cb_rctrl {
             bindings = <&kp LCTRL>;
             key-positions = <19 20>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
         };
 
         cb_rctrl_ralt {
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <19 20 21>;
             require-prior-idle-ms = <130>;
+            timeout-ms = <30>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Totem {
+        Base {
             display-name = "Base";
             bindings = <
 &none      &kp Q  &kp W  &kp E             &kp R           &kp T                            &kp Y        &kp U               &kp I         &kp O    &kp P          &none
