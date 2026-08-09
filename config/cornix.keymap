@@ -49,7 +49,7 @@
             quick-tap-ms = <130>;
         };
 
-        sb_lt: sb_lt {
+        sb_lt: spacebar_layertap {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
 
@@ -72,32 +72,25 @@
     combos {
         compatible = "zmk,combos";
 
-        cb_language {
-            bindings = <&kp RALT>;
-            key-positions = <42 45>;
-            require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
-        };
-
         cb_lgui {
             bindings = <&kp LGUI>;
             key-positions = <13 14>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         cb_rgui {
             bindings = <&kp RGUI>;
             key-positions = <22 21>;
             require-prior-idle-ms = <130>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         cb_quote {
             bindings = <&kp SQT>;
             key-positions = <35 34>;
-            layers = <0>;
             timeout-ms = <30>;
+            require-prior-idle-ms = <130>;
         };
 
         cb_capsword {
